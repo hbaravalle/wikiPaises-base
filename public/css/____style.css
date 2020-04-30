@@ -1,0 +1,162 @@
+/*==================
+ESTILOS GENERALES
+==================*/
+
+body {
+    min-height: 100%;
+    background-color: #eaeaea;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    color: rgb(80, 80, 80);
+}
+
+main.__main-login {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+a, a:hover {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+
+small {
+    display: block;
+    padding-bottom: 10px;
+}
+
+/*==================
+NAVEGACION
+==================*/
+
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav div a:not(.navbar-brand) {
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+/*==================
+SECCION "BÚSQUEDA"
+==================*/
+
+#__seccion-busqueda {
+    padding: 30px 0;
+}
+
+#__seccion-busqueda input {
+    height: 50px;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+    padding-left: 50px;
+    box-shadow:
+        0 1px 1px 0 rgba(0,0,0,0.14),
+        0 2px 1px -1px rgba(0,0,0,0.12),
+        0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+#__seccion-busqueda .__input-group:before {
+    content: '';
+    background-image: url('../img/icon_search.svg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#__seccion-busqueda input[type="submit"] {
+    display: none;
+}
+
+#__seccion-busqueda .titulos {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#__seccion-busqueda .titulos h5 {
+    padding-left: 10px;
+}
+
+#__seccion-busqueda .titulos h5::before {
+    content: '>';
+    padding-right: 10px;
+}
+
+/*==================
+SECCION "LISTADO DE BANDERAS"
+==================*/
+
+.__card-bandera {
+    transition: all 0.2s ease-in-out;
+}
+
+.__card-bandera:hover {
+    box-shadow:
+        0 19px 38px rgba(0,0,0,0.17),
+        0 15px 12px rgba(0,0,0,0.09);
+}
+
+.__card-bandera ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*==================
+LOGIN
+==================*/
+
+.__container-login {
+    display: flex;
+    background: pink;   
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  

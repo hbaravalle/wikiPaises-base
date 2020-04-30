@@ -1,0 +1,114 @@
+body {
+  min-height: 100%;
+  background-color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+}
+
+body main {
+  color: #505050;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+a, a:hover {
+  color: #505050;
+  text-decoration: none;
+}
+
+small {
+  display: block;
+  padding-bottom: 10px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header nav {
+  background-color: #fff;
+}
+
+header nav div a:not(.navbar-brand) {
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+#__seccion-busqueda {
+  padding: 30px 0;
+}
+
+#__seccion-busqueda input {
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-radius: 3px;
+  padding-left: 50px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#__seccion-busqueda input[type="submit"] {
+  display: none;
+}
+
+#__seccion-busqueda .__input-group:before {
+  content: '';
+  background-image: url("../img/icon_search.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0.5;
+}
+
+#__seccion-busqueda .titulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#__seccion-busqueda .titulos h5 {
+  padding-left: 10px;
+}
+
+#__seccion-busqueda .titulos h5::before {
+  content: '>';
+  padding-right: 10px;
+}
+
+.__card-bandera {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.__card-bandera ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.__card-bandera:hover {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.17), 0 15px 12px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.17), 0 15px 12px rgba(0, 0, 0, 0.09);
+}
+
+main#detailCountry {
+  margin-top: 70px;
+}
+
+main#detailCountry .country-detail ul {
+  list-style-type: none;
+  padding: 0;
+}
